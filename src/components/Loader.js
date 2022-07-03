@@ -37,6 +37,10 @@ const Container = styled(motion.div)`
                 stroke: ${(props) => props.theme.text};
             }
         }
+
+        @media (max-width: 48em){
+            width: 25vw;
+        }
     }
 `
 

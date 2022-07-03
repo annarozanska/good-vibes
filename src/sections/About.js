@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import img1 from '../assets/Images/11.webp'
-import img2 from '../assets/Images/10.webp'
 import img3 from '../assets/Images/14.webp'
 
 const Section = styled.section`
@@ -85,13 +84,6 @@ const Right = styled.div`
         width: 100%;
         height: auto;
     }
-
-    .small-img-1{
-        width: 40%;
-        position: absolute;
-        right: 95%;
-        bottom: 10%
-    }
     
     .small-img-2{
         width: 40%;
@@ -108,14 +100,8 @@ const Right = styled.div`
         align-items: center;
 
         img{
+            height: 100vh;
             object-fit: cover;
-        }
-
-        .small-img-1{
-            width: 30%;
-            height: auto;
-            left: 5%;
-            bottom: 10%;
         }
 
         .small-img-2{
@@ -150,9 +136,6 @@ const About = () => {
         </Left>
         <Right>
             <img src={img1} alt="img" />
-            <img 
-            data-scroll data-scroll-speed='5'
-            src={img2} className='small-img-1' alt="img" />
             <img 
             data-scroll data-scroll-speed='-2'
             src={img3} className='small-img-2' alt="img" />

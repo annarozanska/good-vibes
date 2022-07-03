@@ -21,7 +21,7 @@ const Container = styled.div`
 
         g{
             path{
-                stroke: ${(props) => props.theme.body};
+                stroke: ${(props) => props.theme.text};
             }
         }
     }

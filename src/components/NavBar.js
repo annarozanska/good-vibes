@@ -24,10 +24,10 @@ const NavContainer = styled(motion.div)`
 const MenuItems = styled(motion.ul)`
     position: relative;
     height: ${props => props.theme.navHeight};
-    background-color: ${props => props.theme.text};
-    color: ${props => props.theme.body};
+    background-color: ${props => props.theme.body};
+    color: ${props => props.theme.text};
     list-style: none;
-    border-bottom: 1px solid ${props => `rgba(${props.theme.bodyRgba}, 0.1)`};
+    border-bottom: 1px solid  ${props => `rgba(${props.theme.textRgba}, 0.6)`};
 
     display: flex;
     justify-content: space-around;
@@ -44,10 +44,9 @@ const MenuItems = styled(motion.ul)`
 `
 
 const MenuBtn = styled.li`
-    background-color: ${props => `rgba(${props.theme.bodyRgba}, 0.1)`};
+    background-color: ${props => `rgba(${props.theme.textRgba}, 0.6)`};
     list-style-type: none;
-    color: ${props => props.theme.text};
-    text-shadow: 1px 1px 1px ${props => props.theme.body};
+    color: ${props => props.theme.body};
     width: 15rem;
     height: 2.5rem;
 
@@ -76,7 +75,7 @@ const MenuBtn = styled.li`
 
 const MenuItem = styled(motion.li)`
     text-transform: uppercase;
-    color: ${props => props.theme.body};
+    color: ${props => props.theme.text};
     cursor: pointer;
 
     @media (max-width: 48em) {
